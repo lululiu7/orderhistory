@@ -1,0 +1,11 @@
+import sys
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
+
+def getUserId(username):
+    """get user_id according to username"""
+    usersql = """ SELECT ID from opm_user_user WHERE USER_NAME = "%s" """ % username
+    print(usersql)
+
