@@ -10,12 +10,14 @@ print("---start baseusersql---")
 conn = pymysql.connect(host='192.168.182.146',port= 3306,user = 'apps',passwd='apps123',db='lulute',charset='utf8') #db：库名
 #连接数据库
 class orderinfosq(object):
+  def __init__(self, _argument1):
+    self.username = _argument1
   def GetOrderinfo(self):
 #创建游标
     print("---start getorderinfosq---")
     cur = conn.cursor()
 #查询表中存在的数据
-    cur.execute("select * from puren where name='lulu'")
+    cur.execute("select * from puren where name='%s'" %self.username)
 #fetchall:获取表中所有的数据
     ret=cur.fetchall()
     for item in ret:
