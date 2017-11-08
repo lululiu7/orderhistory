@@ -2,8 +2,7 @@
 # _*_ coding:utf-8 _*_
 
 import re
-from linkage.op.basesqltest import orderinfosq
-#from linkage.op.baseUserInfosql import Newuserinfo
+from linkage.op.baseUserInfosql import orderinfosq
 defaultencoding = 'utf-8'
 class oderhistoryuB(object):
     def __init__(self, _argument1):
