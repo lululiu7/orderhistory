@@ -14,5 +14,5 @@ def orderhistory(user_name):
 #           user=userBlock.oderhistoryuB(user_name)
 #     else:
 #        print "您查询的用户不存在，请重新核对用户信息"
-  user=userBlock.oderhistoryuB(user_name)
+  user=orderBlock.oderhistoryuB(user_name)
   user.orderinfo_all()
