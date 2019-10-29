@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+# coding=utf-8
+
+import sys
+from linkage import op
+op.orderService.orderhistory(sys.argv[1])
